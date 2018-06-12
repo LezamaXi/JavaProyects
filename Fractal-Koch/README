@@ -1,0 +1,10 @@
+Lezama Hernández María Ximena
+Fernando Reyes
+
+Para ejecutar.
+1-Asegurase esta en la dirección /alumnos/mlezamah/opcional
+2-En bash ejecuta el build con las instrucciones ”ant” 
+3-En bash situase en la carpeta dist con “cd dist”
+4-Descomprima el jar con la instruccion java -jar opcional.jar X
+
+X = al numero o nivel de recursion que se desee

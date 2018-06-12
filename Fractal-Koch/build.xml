@@ -1,0 +1,51 @@
+<project name="opcional"
+	 default="build"
+	 basedir=".">
+
+  <description>
+  </description>
+  
+  <property name = "jarname" value = "Fractal-Koch"/>
+  <property name = "jarname" value = "Koch"/>
+  
+  <target name="compile"> 
+    <mkdir dir="build"/>
+    <mkdir dir = "dist"/>
+    <javac srcdir = "src"
+	   destdir = "build"/>
+  </target>
+  
+  <target name = "run" depends="compile">
+    <java classname = "${main}" classpath ="build"/>
+  </target>
+  
+  <target name="clean">
+    <delete dir="build"/>
+    <delete dir = "dist" />
+    <delete dir = "docs"/>
+    
+  </target>
+  
+  <target name = "jar" depends = "compile">
+    <jar  destfile = "dist/${jarname}.jar" basedir="build">
+      <manifest>
+	<attribute name= "Main-Class" value="Koch"/>
+      </manifest>
+    </jar>
+  </target>
+  <target name="javadoc">
+    <mkdir dir="docs"/>
+		<javadoc sourcepath="src"
+			 destdir="docs"
+			 encoding="UTF-8"
+			 docencoding="UTF-8"
+			 charset="UTF-8">
+		  <fileset file="src/Koch.java"/>
+		</javadoc>
+	</target>
+  
+  <target name = "build" depends = "compile,jar,run">
+  </target>
+  
+</project>
+

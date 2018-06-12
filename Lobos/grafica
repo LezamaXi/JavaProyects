@@ -1,0 +1,7 @@
+set grid
+set xlabel "Posición este"
+set ylabel "Posición norte"
+set title "TRAYECTORIAS DEL LOBO ALFA DURANTE LA SEMANA"
+limite_norte(x) = 25
+plot [0:30] [0:30] 'salida.dat' title "Trayectoria"  with lines, limite_norte(x)
+title "Límite norte"
