@@ -11,6 +11,16 @@ For that we create we need a program in Java that given the input * telemetria.d
 
 First, we create the necessary programs to model the workspace. Use **GNUPlot** for the output and be able to map the data from *telemetry.dat*. The green line is the fronter of the natural reserve.
 
+# Run it
+
+```
+➜ ~ javac -classpath bin/geom.jar Lobos.java
+➜ ~ java -cp $CLASSPATH:bin/geom.jar Lobos 0 0 20 0 telemetria.dat > salida
+```
+in gnuplot
+```
+➜ ~ load 'grafica'
+```
 ## Results 
 
 ![Mars Page](Lobos-graph.png)
