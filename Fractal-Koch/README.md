@@ -44,7 +44,7 @@ Once there, type the following command.
 We have to be in the dist folder to run the .jar
 We need to unzip the .jar with the following command, where X represents the number of iteractions they want, from iteration 13, the program takes too much, so it is advisable to leave it until 13.
 ```
-➜ ~ java -jar opcional.jar X
+➜ ~ java -jar Fractal-Koch.jar X
 ```
 ## Results
 
